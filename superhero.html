@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="C:\Users\abc\Desktop\superhero.js"></script>
+</head>
+<body>
+    <div class="pos-f-t">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h4 class="text-white">Collapsed content</h4>
+      <span class="text-muted">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 serch-bar" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="card">Search</button>
+          <div id="output"></div>
+    </form>
+  </nav>
+</div>
+    
+    
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">bio</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">powerstatus</li>
+    <li class="list-group-item">apperence</li>
+    <li class="list-group-item">work</li>
+  </ul>
+  
+</div>   
+    
+<!--
+    <script>
+    console.log(document.title);
+    </script>
+-->
+    
+<!--
+    <script>
+    
+    document.getElementById('card').addEventListener('click',card);
+
+function card(){
+fetch('https://superheroapi.com/api/access-token/character-id')
+    .then((res)=>res.json())
+    .then((data)=>{
+    let output = '<h2>superhero</h2>';
+    data.forEach(function(post){
+                 output +=
+                 <div>
+                 <h3>${post.title}</h3>
+                 </div>
+                 ;
+                 });
+     document.getElementById('output').innerHTML=output;
+
+})
+   }
+    </script>
+-->
+   
+    
+    </body>
+</html>
